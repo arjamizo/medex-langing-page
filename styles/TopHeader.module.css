@@ -1,0 +1,19 @@
+.globalTopHeader {
+	border: 5px solid rgb(187, 21, 238);
+}
+
+.medexLogo {
+	padding: 40px;
+}
+
+.topRight {
+	color: red;
+	position: absolute;
+	right: 30px;
+	top: 30px;
+}
+
+.borderWhite {
+	border: solid 3px green;
+	padding: 20px;
+}
