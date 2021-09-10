@@ -4,5 +4,26 @@
 
 .picturesArray {
 	display: flex;
-	gap: 2rem;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	gap: 4rem;
+	margin: 20px 0px;
+}
+
+.globalCustomizedCare h2 {
+	text-align: center;
+	color: #2f3c7e;
+	font-size: 2rem;
+}
+
+.moreButton {
+	padding: 10px;
+	border: 2px solid #5f94ff;
+	color: #5f94ff;
+	width: 100px;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+	margin: auto;
 }

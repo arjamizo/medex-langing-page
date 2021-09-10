@@ -1,3 +1,9 @@
 .globalFooter {
-	border: 5px solid rgba(160, 157, 10, 0.589);
+	background: linear-gradient(
+		90deg,
+		rgb(37, 109, 253) 0%,
+		rgba(12, 85, 189, 1) 35%,
+		rgb(0, 62, 187) 100%
+	);
+	color: white;
 }

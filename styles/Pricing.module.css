@@ -1,3 +1,61 @@
 .globalPricing {
-	border: 5px solid rgb(214, 235, 31);
+	background: linear-gradient(
+		90deg,
+		rgb(37, 109, 253) 0%,
+		rgba(12, 85, 189, 1) 35%,
+		rgb(1, 47, 139) 100%
+	);
+	color: white;
+	border-radius: 50px 0px 0px 0px;
+	padding: 40px;
+	text-align: center;
+}
+
+.globalPricing h2 {
+	font-size: 2.2rem;
+}
+
+.globalPricing h3 {
+	font-weight: 300;
+}
+
+.priceBox {
+	border: 1px solid black;
+	padding: 30px;
+	width: 250px;
+	margin: auto;
+	height: 300px;
+	background: white;
+	color: blue;
+	border-radius: 20px;
+	--tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+		var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.pricePosition {
+	display: flex;
+	margin: auto;
+}
+
+.downloadAppBar {
+	padding: 20px;
+	background-color: #e7e3f8;
+	color: darkblue;
+	font-weight: bold;
+	width: 300px;
+	margin: auto;
+	border-radius: 10px;
+}
+
+.tryIt {
+	padding: 10px;
+	max-width: 100px;
+	margin: auto;
+	color: white;
+	background: #24b74d;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight: bold;
 }

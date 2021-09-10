@@ -1,9 +1,24 @@
 .globalTopHeader {
-	border: 5px solid rgb(187, 21, 238);
+	padding: 60px 0px 100px 40px;
+	background: linear-gradient(
+		90deg,
+		rgb(37, 109, 253) 0%,
+		rgba(12, 85, 189, 1) 35%,
+		rgb(1, 47, 139) 100%
+	);
+	color: white;
+	border-radius: 0px 0px 0px 70px;
+	margin-left: 20px;
 }
 
 .medexLogo {
-	padding: 40px;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.title {
+	padding: 30px 0px 0px 0px;
+	font-weight: 100;
 }
 
 .topRight {
@@ -16,4 +31,15 @@
 .borderWhite {
 	border: solid 3px green;
 	padding: 20px;
+}
+
+.getCareButton {
+	background-color: #24b74d;
+	color: white;
+	width: 130px;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 5px;
+	align-items: center;
 }

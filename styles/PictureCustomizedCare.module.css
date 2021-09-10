@@ -1,5 +1,14 @@
 .pictureBox {
 	width: 150px;
 	height: 200px;
-	border: 5px solid green;
+	border: 2px solid green;
+	border-radius: 10px;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.description {
+	position: absolute;
+	font-weight: bold;
+	bottom: -30px;
 }

@@ -9,15 +9,13 @@ export default function Pricing() {
 				The price does not include the cost of medications or laboratory
 				diagnostics
 			</h3>
-			<div className={styles.priceLeftPostion}>
+			<div className={styles.pricePosition}>
 				<div className={styles.priceBox}>
 					<p className={styles.priceOfPlan}>Health care free</p>
 					<p className={styles.price}>Free</p>
 					<p className={styles.benefits}>free advices</p>
 					<p className={styles.benefits}>1 therapy plan</p>
 				</div>
-			</div>
-			<div className={styles.priceRightPosition}>
 				<div className={styles.priceBox}>
 					<p className={styles.priceOfPlan}>Health care Basic</p>
 					<p className={styles.price}>
@@ -26,13 +24,13 @@ export default function Pricing() {
 					<p className={styles.benefits}>unlimited chat</p>
 					<p className={styles.benefits}>medication delivery</p>
 					<p className={styles.benefits}>unlimited therapy plans</p>
+					<p className={styles.tryIt}>Try it free</p>
 				</div>
-				<button className={styles.tryIt}>Try it free</button>
 			</div>
 			<div className={styles.downloadAppBar}>
-				Download the app
-				<span className={styles.icons}>google play icon</span>
-				<span className={styles.icons}>apple store icon</span>
+				Download the App
+				<span className={styles.icons}>*icon*</span>
+				<span className={styles.icons}>*icon*</span>
 			</div>
 		</div>
 	);
