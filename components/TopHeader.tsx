@@ -11,7 +11,6 @@ export default function TopHeader() {
 					<ReactScrollLink
 						activeClass="active"
 						to="faq"
-						spy={true}
 						smooth={true}
 						duration={1000}
 					>
@@ -22,7 +21,6 @@ export default function TopHeader() {
 					<ReactScrollLink
 						activeClass="active"
 						to="plans"
-						spy={true}
 						smooth={true}
 						duration={1000}
 					>
