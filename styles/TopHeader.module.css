@@ -9,16 +9,18 @@
 	color: white;
 	border-radius: 0px 0px 0px 70px;
 	margin-left: 20px;
+	height: 645px;
 }
 
 .medexLogo {
 	font-size: 40px;
 	max-width: 150px;
 	font-weight: bold;
-	font-family: "Poppins";
 	font-weight: 700;
 	font-size: 45px;
 	line-height: 67.5px;
+	position: absolute;
+	left: 137px;
 }
 
 .medexLogo:hover {
@@ -26,9 +28,8 @@
 }
 
 .title {
-	padding: 30px 0px 0px 0px;
+	padding: 100px 0px 0px 17px;
 	font-weight: 100;
-	font-family: "Poppins";
 	font-weight: 100;
 	font-size: 40px;
 	line-height: 60px;
@@ -37,8 +38,8 @@
 .topRight {
 	color: white;
 	position: absolute;
-	right: 30px;
-	top: 52px;
+	right: 137px;
+	top: 54px;
 }
 
 .buttonFaq,
@@ -48,7 +49,6 @@
 	margin: 20px;
 	padding: 15px;
 	cursor: pointer;
-	font-family: "Poppins";
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 36px;
@@ -72,23 +72,21 @@
 }
 
 .getCareButton {
-	background-color: #24b74d;
-	color: white;
+	font-size: 24px;
+	font-weight: 400;
 	height: 56px;
-	width: 160px;
-	cursor: pointer;
+	background-color: #24b74d;
 	border-radius: 5px;
+	color: white;
 	grid-row-start: 7;
+	width: 160px;
 	left: 30px;
 	bottom: -20px;
+	display: flex;
 	position: relative;
 	align-items: center;
-	display: flex;
 	justify-content: center;
-	font-family: "Poppins";
-	font-size: 24px;
-	line-height: 36px;
-	font-weight: 400;
+	cursor: pointer;
 }
 
 .getCareButton:hover {
@@ -98,15 +96,32 @@
 }
 
 .gridContainer {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	gap: 2px 2px;
-	font-family: "Poppins";
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 27px;
 	height: 285px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 2px 2px;
+	color: #d6dcff;
+	font-weight: 600;
+}
+
+.paddingIcon {
+	padding: 0px 15px;
+	position: relative;
+	align-items: center;
+	display: flex;
+}
+
+.freeMedicalAdvice,
+.licensedProfessionals,
+.personalizedTreatment,
+.shippingWithin {
+	display: flex;
+	justify-content: left;
+	align-items: center;
 }
 
 .freeMedicalAdvice {
@@ -123,9 +138,6 @@
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row-start: 5;
-	display: flex;
-	justify-content: left;
-	align-items: center;
 	grid-column: 1;
 }
 
@@ -133,9 +145,6 @@
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 3;
-	display: flex;
-	justify-content: left;
-	align-items: center;
 	grid-column: 2;
 }
 
@@ -143,9 +152,6 @@
 	grid-column-start: 2;
 	grid-column-end: 2;
 	grid-row-start: 5;
-	display: flex;
-	justify-content: left;
-	align-items: center;
 	grid-column: 2;
 }
 
@@ -154,11 +160,4 @@
 	grid-column: 3/5;
 	text-align: center;
 	padding: 0px 30px;
-}
-
-.paddingIcon {
-	padding: 0px 15px;
-	position: relative;
-	align-items: center;
-	display: flex;
 }
