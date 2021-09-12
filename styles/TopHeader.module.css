@@ -1,5 +1,5 @@
 .globalTopHeader {
-	padding: 30px 0px 150px 50px;
+	padding: 30px 0px 70px 97px;
 	background: linear-gradient(
 		90deg,
 		rgb(37, 109, 253) 0%,
@@ -13,6 +13,7 @@
 
 .medexLogo {
 	font-size: 40px;
+	max-width: 150px;
 	font-weight: bold;
 	font-family: "Poppins";
 	font-weight: 700;
@@ -73,16 +74,91 @@
 .getCareButton {
 	background-color: #24b74d;
 	color: white;
-	width: 130px;
-	padding: 10px;
+	height: 56px;
+	width: 160px;
 	cursor: pointer;
-	text-align: center;
 	border-radius: 5px;
+	grid-row-start: 7;
+	left: 30px;
+	bottom: -20px;
+	position: relative;
 	align-items: center;
+	display: flex;
+	justify-content: center;
+	font-family: "Poppins";
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 400;
 }
 
 .getCareButton:hover {
-	background-color: #2aec54b7;
+	background-color: #01b929b7;
 	color: rgb(255, 255, 255);
 	text-decoration: underline;
+}
+
+.gridContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 2px 2px;
+	font-family: "Poppins";
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+	height: 285px;
+}
+
+.freeMedicalAdvice {
+	grid-column-start: 1;
+	grid-row-start: 3;
+	justify-content: center;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	grid-column: 1;
+}
+
+.licensedProfessionals {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 5;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	grid-column: 1;
+}
+
+.personalizedTreatment {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	grid-column: 2;
+}
+
+.shippingWithin {
+	grid-column-start: 2;
+	grid-column-end: 2;
+	grid-row-start: 5;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	grid-column: 2;
+}
+
+.imageLady {
+	grid-row: span 2 / 2;
+	grid-column: 3/5;
+	text-align: center;
+	padding: 0px 30px;
+}
+
+.paddingIcon {
+	padding: 0px 15px;
+	position: relative;
+	align-items: center;
+	display: flex;
 }
