@@ -38,7 +38,7 @@ export default function TopHeader() {
 				<span className={styles.freeMedicalAdvice}>
 					<span className={styles.paddingIcon}>
 						<Image
-							src="/../public/icons/iconFreeMedical.png"
+							src="/icons/iconFreeMedical.png"
 							alt="Free Medical Advice"
 							width={30}
 							height={30}
@@ -50,7 +50,7 @@ export default function TopHeader() {
 				<span className={styles.licensedProfessionals}>
 					<span className={styles.paddingIcon}>
 						<Image
-							src="/../public/icons/iconLicensedProfessionals.png"
+							src="/icons/iconLicensedProfessionals.png"
 							alt="Free Medical Advice"
 							width={30}
 							height={30}
@@ -62,7 +62,7 @@ export default function TopHeader() {
 				<span className={styles.personalizedTreatment}>
 					<span className={styles.paddingIcon}>
 						<Image
-							src="/../public/icons/iconPersonalizedTreatment.png"
+							src="/icons/iconPersonalizedTreatment.png"
 							alt="Free Medical Advice"
 							width={25}
 							height={18.75}
@@ -74,7 +74,7 @@ export default function TopHeader() {
 				<span className={styles.shippingWithin}>
 					<span className={styles.paddingIcon}>
 						<Image
-							src="/../public/icons/iconShippingWithin24.png"
+							src="/icons/iconShippingWithin24.png"
 							alt="Free Medical Advice"
 							width={30}
 							height={30}
@@ -85,7 +85,7 @@ export default function TopHeader() {
 				</span>
 				<div className={styles.imageLady}>
 					<Image
-						src="/../public/images/ladyMail.png"
+						src="/images/ladyMail.png"
 						alt="Free Medical Advice"
 						width={562}
 						height={285}
