@@ -1,5 +1,5 @@
 .globalTopHeader {
-	padding: 60px 0px 100px 40px;
+	padding: 30px 0px 150px 50px;
 	background: linear-gradient(
 		90deg,
 		rgb(37, 109, 253) 0%,
@@ -14,23 +14,60 @@
 .medexLogo {
 	font-size: 40px;
 	font-weight: bold;
+	font-family: "Poppins";
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 67.5px;
+}
+
+.medexLogo:hover {
+	cursor: pointer;
 }
 
 .title {
 	padding: 30px 0px 0px 0px;
 	font-weight: 100;
+	font-family: "Poppins";
+	font-weight: 100;
+	font-size: 40px;
+	line-height: 60px;
 }
 
 .topRight {
-	color: red;
+	color: white;
 	position: absolute;
 	right: 30px;
-	top: 30px;
+	top: 52px;
 }
 
-.borderWhite {
-	border: solid 3px green;
-	padding: 20px;
+.buttonFaq,
+.buttonPlans,
+.buttonLogIn,
+.buttonTryIt {
+	margin: 20px;
+	padding: 15px;
+	cursor: pointer;
+	font-family: "Poppins";
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.buttonFaq:hover,
+.buttonPlans:hover,
+.buttonLogIn:hover,
+.buttonTryIt:hover {
+	text-decoration: underline;
+}
+
+.buttonTryIt:hover {
+	background-color: rgb(229, 229, 238);
+	color: rgb(0, 58, 146);
+}
+
+.buttonTryIt {
+	border: solid 2px white;
+	padding: 10px 15px;
 }
 
 .getCareButton {
@@ -42,4 +79,10 @@
 	text-align: center;
 	border-radius: 5px;
 	align-items: center;
+}
+
+.getCareButton:hover {
+	background-color: #2aec54b7;
+	color: rgb(255, 255, 255);
+	text-decoration: underline;
 }

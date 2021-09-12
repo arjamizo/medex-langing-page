@@ -3,7 +3,7 @@ import styles from "../styles/Pricing.module.css";
 
 export default function Pricing() {
 	return (
-		<div className={styles.globalPricing}>
+		<div className={styles.globalPricing} id="plans">
 			<h2>Affordable GP care to everyone</h2>
 			<h3>
 				The price does not include the cost of medications or laboratory
