@@ -6,4 +6,69 @@
 		rgb(0, 62, 187) 100%
 	);
 	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1rem 3rem;
+	align-items: flex-start;
+}
+
+.smallText {
+	padding-top: 1rem;
+}
+
+.smallIcons {
+	display: flex;
+	align-content: flex-end;
+	gap: 1.3rem;
+	cursor: pointer;
+}
+
+.oneIcon {
+	padding: 1rem;
+}
+
+.oneIcon:hover {
+	background-color: rgba(0, 0, 0, 0.241);
+	border-radius: 3rem;
+}
+
+.globalFooter h2 {
+	font-size: 5rem;
+	padding: 0px;
+	margin: 0px;
+	font-weight: 700;
+}
+
+.globalFooter h3 {
+	font-size: 2rem;
+	padding: 0px;
+	margin: 0px;
+	font-weight: 600;
+	min-width: 10rem;
+}
+
+.contactInfo,
+.learnInfo {
+	padding-top: 1.5rem;
+}
+
+.searchBoxLeft {
+	flex-grow: 4;
+}
+
+.learnInfo {
+	flex-grow: 2;
+}
+
+.contactInfo {
+	flex-grow: 2;
+}
+
+.linksUnderline {
+	font-weight: 400;
+}
+
+.linksUnderline:hover {
+	text-decoration: underline;
+	cursor: pointer;
 }
