@@ -34,55 +34,59 @@ export default function TopHeader() {
 			<h1 className={styles.title}>
 				Treatment, when &amp; where You need it
 			</h1>
-			<div className={styles.gridContainer}>
-				<span className={styles.freeMedicalAdvice}>
-					<span className={styles.paddingIcon}>
-						<Image
-							src="/icons/iconFreeMedical.png"
-							alt="Free Medical Advice"
-							width={30}
-							height={30}
-							layout="fixed"
-						/>
+			<div className={styles.flexContainer}>
+				<div>
+					<span className={styles.freeMedicalAdvice}>
+						<span className={styles.paddingIcon}>
+							<Image
+								src="/icons/iconFreeMedical.png"
+								alt="Free Medical Advice"
+								width={30}
+								height={30}
+								layout="fixed"
+							/>
+						</span>
+						Free medical advice
 					</span>
-					Free medical advice
-				</span>
-				<span className={styles.licensedProfessionals}>
-					<span className={styles.paddingIcon}>
-						<Image
-							src="/icons/iconLicensedProfessionals.png"
-							alt="Free Medical Advice"
-							width={30}
-							height={30}
-							layout="fixed"
-						/>
+					<span className={styles.licensedProfessionals}>
+						<span className={styles.paddingIcon}>
+							<Image
+								src="/icons/iconLicensedProfessionals.png"
+								alt="Free Medical Advice"
+								width={30}
+								height={30}
+								layout="fixed"
+							/>
+						</span>
+						Licensed professionals
 					</span>
-					Licensed professionals
-				</span>
-				<span className={styles.personalizedTreatment}>
-					<span className={styles.paddingIcon}>
-						<Image
-							src="/icons/iconPersonalizedTreatment.png"
-							alt="Free Medical Advice"
-							width={25}
-							height={18.75}
-							layout="fixed"
-						/>
+				</div>
+				<div>
+					<span className={styles.personalizedTreatment}>
+						<span className={styles.paddingIcon}>
+							<Image
+								src="/icons/iconPersonalizedTreatment.png"
+								alt="Free Medical Advice"
+								width={25}
+								height={18.75}
+								layout="fixed"
+							/>
+						</span>
+						Personalized treatment plans
 					</span>
-					Personalized treatment plans
-				</span>
-				<span className={styles.shippingWithin}>
-					<span className={styles.paddingIcon}>
-						<Image
-							src="/icons/iconShippingWithin24.png"
-							alt="Free Medical Advice"
-							width={30}
-							height={30}
-							layout="fixed"
-						/>
+					<span className={styles.shippingWithin}>
+						<span className={styles.paddingIcon}>
+							<Image
+								src="/icons/iconShippingWithin24.png"
+								alt="Free Medical Advice"
+								width={30}
+								height={30}
+								layout="fixed"
+							/>
+						</span>
+						Shipping within 24 hours
 					</span>
-					Shipping within 24 hours
-				</span>
+				</div>
 				<div className={styles.imageLady}>
 					<Image
 						src="/images/ladyMail.png"
@@ -91,8 +95,8 @@ export default function TopHeader() {
 						height={285}
 					/>
 				</div>
-				<div className={styles.getCareButton}>Get Care</div>
 			</div>
+			<div className={styles.getCareButton}>Get Care</div>
 		</div>
 	);
 }

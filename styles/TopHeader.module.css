@@ -9,7 +9,6 @@
 	color: white;
 	border-radius: 0px 0px 0px 70px;
 	margin-left: 20px;
-	height: 645px;
 }
 
 .medexLogo {
@@ -78,12 +77,8 @@
 	background-color: #24b74d;
 	border-radius: 5px;
 	color: white;
-	grid-row-start: 7;
 	width: 160px;
-	left: 30px;
-	bottom: -20px;
 	display: flex;
-	position: relative;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
@@ -95,17 +90,23 @@
 	text-decoration: underline;
 }
 
-.gridContainer {
+.flexContainer {
+	color: #d6dcff;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 27px;
-	height: 285px;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	gap: 2px 2px;
-	color: #d6dcff;
-	font-weight: 600;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.freeMedicalAdvice,
+.licensedProfessionals,
+.shippingWithin,
+.personalizedTreatment {
+	display: flex;
+	padding: 20px;
 }
 
 .paddingIcon {
@@ -113,51 +114,38 @@
 	position: relative;
 	align-items: center;
 	display: flex;
-}
-
-.freeMedicalAdvice,
-.licensedProfessionals,
-.personalizedTreatment,
-.shippingWithin {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-}
-
-.freeMedicalAdvice {
-	grid-column-start: 1;
-	grid-row-start: 3;
-	justify-content: center;
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	grid-column: 1;
-}
-
-.licensedProfessionals {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row-start: 5;
-	grid-column: 1;
-}
-
-.personalizedTreatment {
-	grid-column-start: 2;
-	grid-column-end: 4;
-	grid-row-start: 3;
-	grid-column: 2;
-}
-
-.shippingWithin {
-	grid-column-start: 2;
-	grid-column-end: 2;
-	grid-row-start: 5;
-	grid-column: 2;
+	flex: nowrap;
 }
 
 .imageLady {
-	grid-row: span 2 / 2;
-	grid-column: 3/5;
-	text-align: center;
-	padding: 0px 30px;
+	padding: 30px;
+}
+
+@media (max-width: 1024px) {
+	/* Laptop */
+	.topRight {
+		position: relative;
+		margin-top: 60px;
+		right: 0;
+		left: 0;
+	}
+
+	.title {
+		padding: 80px 0px 0px 17px;
+	}
+	.buttonFaq {
+		padding-left: 0px;
+	}
+
+	.medexLogo {
+		left: 133px;
+	}
+}
+
+@media (max-width: 768px) {
+	/* Tablet */
+}
+
+@media (max-width: 425px) {
+	/* Mobile L */
 }
