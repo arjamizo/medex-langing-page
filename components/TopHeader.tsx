@@ -29,7 +29,7 @@ export default function TopHeader() {
 							Plans
 						</ReactScrollLink>
 					</span>
-					<span className={styles.buttonTryIt}>Try it for free</span>
+					<span className={styles.buttonTryIt}>Try it free</span>
 					<span className={styles.buttonLogIn}>Log in</span>
 				</div>
 			</div>
