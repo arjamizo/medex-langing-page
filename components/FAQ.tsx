@@ -4,7 +4,7 @@ import FaqOneQuestion from "./elements/FaqOneQuestion";
 
 export default function FAQ() {
 	return (
-		<div className={styles.globalFaq}>
+		<div className={styles.globalFaq} id="faq">
 			<h2>Frequently Asked Questions</h2>
 			<div className={styles.faqArray}>
 				<FaqOneQuestion
