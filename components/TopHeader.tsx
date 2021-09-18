@@ -6,34 +6,36 @@ import Image from "next/image";
 export default function TopHeader() {
 	return (
 		<div className={styles.globalTopHeader}>
-			<div className={styles.medexLogo}>Medex</div>
-			<div className={styles.topRight}>
-				<span className={styles.buttonFaq}>
-					<ReactScrollLink
-						activeClass="active"
-						to="faq"
-						smooth={true}
-						duration={1000}
-					>
-						FAQ
-					</ReactScrollLink>
-				</span>
-				<span className={styles.buttonPlans}>
-					<ReactScrollLink
-						activeClass="active"
-						to="plans"
-						smooth={true}
-						duration={1000}
-					>
-						Plans
-					</ReactScrollLink>
-				</span>
-				<span className={styles.buttonTryIt}>Try it for free</span>
-				<span className={styles.buttonLogIn}>Log in</span>
+			<div className={styles.topRow}>
+				<h1 className={styles.medexLogo}>Medex</h1>
+				<div className={styles.topRightButtons}>
+					<span className={styles.buttonFaq}>
+						<ReactScrollLink
+							activeClass="active"
+							to="faq"
+							smooth={true}
+							duration={1000}
+						>
+							FAQ
+						</ReactScrollLink>
+					</span>
+					<span className={styles.buttonPlans}>
+						<ReactScrollLink
+							activeClass="active"
+							to="plans"
+							smooth={true}
+							duration={1000}
+						>
+							Plans
+						</ReactScrollLink>
+					</span>
+					<span className={styles.buttonTryIt}>Try it for free</span>
+					<span className={styles.buttonLogIn}>Log in</span>
+				</div>
 			</div>
-			<h1 className={styles.title}>
+			<h2 className={styles.title}>
 				Treatment, when &amp; where You need it
-			</h1>
+			</h2>
 			<div className={styles.flexContainer}>
 				<div>
 					<span className={styles.freeMedicalAdvice}>
@@ -41,8 +43,8 @@ export default function TopHeader() {
 							<Image
 								src="/icons/iconFreeMedical.png"
 								alt="Free Medical Advice"
-								width={30}
-								height={30}
+								width={25}
+								height={25}
 								layout="fixed"
 							/>
 						</span>
@@ -53,8 +55,8 @@ export default function TopHeader() {
 							<Image
 								src="/icons/iconLicensedProfessionals.png"
 								alt="Free Medical Advice"
-								width={30}
-								height={30}
+								width={25}
+								height={25}
 								layout="fixed"
 							/>
 						</span>
@@ -68,7 +70,7 @@ export default function TopHeader() {
 								src="/icons/iconPersonalizedTreatment.png"
 								alt="Free Medical Advice"
 								width={25}
-								height={18.75}
+								height={19}
 								layout="fixed"
 							/>
 						</span>
@@ -79,8 +81,8 @@ export default function TopHeader() {
 							<Image
 								src="/icons/iconShippingWithin24.png"
 								alt="Free Medical Advice"
-								width={30}
-								height={30}
+								width={27}
+								height={25}
 								layout="fixed"
 							/>
 						</span>
