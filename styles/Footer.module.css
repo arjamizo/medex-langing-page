@@ -8,13 +8,14 @@
 	color: white;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 1rem 3rem;
+	padding: 1rem 5rem;
 	align-items: flex-start;
 }
 
 .smallText {
 	padding-top: 2rem;
 	margin: 6px 0px;
+	font-size: 20px;
 }
 
 .smallIcons {
@@ -72,6 +73,7 @@
 	font-weight: 400;
 	color: rgba(255, 255, 255, 0.857);
 	width: fit-content;
+	margin: 1rem 2rem 1.5rem 0px;
 }
 
 .linksUnderline:hover {
@@ -91,4 +93,34 @@
 	background-size: 1.8rem;
 	padding: 1rem 3rem 1rem 1rem;
 	border-radius: 0px 1rem 0px 1rem;
+	font-family: "Poppins";
+	margin: 0px 2rem 2rem 0px;
+}
+@media (max-width: 768px) {
+	/* tablet */
+	.inputSearch {
+		width: 19rem;
+	}
+}
+
+@media (max-width: 425px) {
+	/* tablet */
+	.inputSearch {
+		width: 75vw;
+	}
+	.globalFooter h2 {
+		font-size: 4rem;
+		padding: 0px;
+		margin: 0px;
+		font-weight: 700;
+	}
+
+	.smallText {
+		padding-top: 2rem;
+		font-size: 1rem;
+		word-wrap: break-word;
+	}
+	.globalFooter {
+		padding: 1rem 2rem;
+	}
 }
