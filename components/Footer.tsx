@@ -8,7 +8,12 @@ export default function Footer() {
 			<div className={styles.searchBoxLeft}>
 				<h2>Medex</h2>
 				<p className={styles.smallText}>What are you looking for?</p>
-				<input type="text" />
+				<input
+					type="text"
+					name="search"
+					placeholder="Search.."
+					className={styles.inputSearch}
+				/>
 			</div>
 			<div className={styles.learnInfo}>
 				<h3>Learn</h3>
@@ -24,33 +29,36 @@ export default function Footer() {
 				<p className={styles.linksUnderline}>Support</p>
 				<p className={styles.linksUnderline}>contact@medex.com</p>
 				<div className={styles.smallIcons}>
-					<p className={styles.oneIcon}>
+					<div className={styles.oneIcon}>
 						<Image
 							src="/icons/instagram.png"
-							alt="Free Medical Advice"
+							alt="Instagram"
 							width={36}
 							height={36}
 							layout="fixed"
+							className={styles.iconsImage}
 						/>
-					</p>
-					<p className={styles.oneIcon}>
+					</div>
+					<div className={styles.oneIcon}>
 						<Image
 							src="/icons/facebook.png"
-							alt="Free Medical Advice"
+							alt="Facebook"
 							width={36}
 							height={36}
 							layout="fixed"
+							className={styles.iconsImage}
 						/>
-					</p>
-					<p className={styles.oneIcon}>
+					</div>
+					<div className={styles.oneIcon}>
 						<Image
 							src="/icons/twitter.png"
-							alt="Free Medical Advice"
+							alt="Twitter"
 							width={36}
 							height={36}
 							layout="fixed"
+							className={styles.iconsImage}
 						/>
-					</p>
+					</div>
 				</div>
 			</div>
 		</div>
