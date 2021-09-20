@@ -1,19 +1,53 @@
 .faqBox {
 	margin: auto;
 	max-width: 600px;
-	border: 3px solid rgb(223, 223, 223);
+	border: 3px solid rgba(223, 223, 223, 0.542);
 	border-radius: 10px;
 	padding: 0px 20px;
+	position: relative;
+	cursor: pointer;
 }
 
 .faqBox h3 {
 	color: #1565ff;
-	font-size: 1.3rem;
-	padding: 0px;
+	font-size: 24px;
+	padding: 0.5rem 2rem 0px 0px;
 	font-weight: 600;
 }
 
 .faqBox h4 {
 	font-weight: 500;
 	color: #646e9f;
+	padding: 0px 0px 1rem 0px;
+	font-size: 20px;
+}
+
+.closeIcon {
+	position: absolute;
+	right: 0.6rem;
+	top: 0.6rem;
+}
+
+.iconClass:hover {
+	background-color: rgba(147, 135, 255, 0.138);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.faqBox:hover {
+	--tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+		var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (max-width: 425px) {
+	/* Mobile L */
+
+	.faqBox h3 {
+		font-size: 1.2rem;
+	}
+	.faqBox h4 {
+		font-size: 1rem;
+	}
 }

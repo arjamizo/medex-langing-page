@@ -36,7 +36,7 @@ export default function FAQ() {
 				<FaqOneQuestion
 					question={"Can I purchase medications with home delivery?"}
 					answer={
-						"OTC medications: Yes, Rx medications: No, The current position of the Chief Pharmaceutical Inspector is identical to the act and is clear - internet - order sale of prescription drugs is impossible. Pharmaceutical law regulations in force in Poland do not allow this."
+						"OTC medications: <b> Yes</b>, Rx medications: No, The current position of the Chief Pharmaceutical Inspector is identical to the act and is clear - internet - order sale of prescription drugs is impossible. Pharmaceutical law regulations in force in Poland do not allow this."
 					}
 				/>
 				<FaqOneQuestion
