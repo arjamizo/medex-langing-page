@@ -59,6 +59,12 @@
 	flex-grow: 4;
 }
 
+.learnInfo ul,
+.contactInfo ul {
+	padding: 0px;
+	list-style: none;
+}
+
 .learnInfo {
 	flex-grow: 2;
 }

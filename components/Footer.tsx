@@ -17,17 +17,21 @@ export default function Footer() {
 			</div>
 			<div className={styles.learnInfo}>
 				<h3>Learn</h3>
-				<p className={styles.linksUnderline}>About us</p>
-				<p className={styles.linksUnderline}>Our Experts</p>
-				<p className={styles.linksUnderline}>How it works</p>
-				<p className={styles.linksUnderline}>Purpose</p>
-				<p className={styles.linksUnderline}>Investors</p>
-				<p className={styles.linksUnderline}>Reviews</p>
+				<ul>
+					<li className={styles.linksUnderline}>About us</li>
+					<li className={styles.linksUnderline}>Our Experts</li>
+					<li className={styles.linksUnderline}>How it works</li>
+					<li className={styles.linksUnderline}>Purpose</li>
+					<li className={styles.linksUnderline}>Investors</li>
+					<li className={styles.linksUnderline}>Reviews</li>
+				</ul>
 			</div>
 			<div className={styles.contactInfo}>
 				<h3>Contact</h3>
-				<p className={styles.linksUnderline}>Support</p>
-				<p className={styles.linksUnderline}>contact@medex.com</p>
+				<ul>
+					<li className={styles.linksUnderline}>Support</li>
+					<li className={styles.linksUnderline}>contact@medex.com</li>
+				</ul>
 				<div className={styles.smallIcons}>
 					<div className={styles.oneIcon}>
 						<Image
