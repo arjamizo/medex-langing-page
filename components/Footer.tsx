@@ -9,6 +9,8 @@ export default function Footer() {
 		{ path: "/icons/twitter.png", alt: "Twitter" },
 	];
 
+	const iconSize = 36; // px
+
 	return (
 		<div className={styles.globalFooter}>
 			<div className={styles.searchBoxLeft}>
@@ -45,8 +47,8 @@ export default function Footer() {
 								<Image
 									src={e.path}
 									alt={e.alt}
-									width={36}
-									height={36}
+									width={iconSize}
+									height={iconSize}
 									layout="fixed"
 									className={styles.iconsImage}
 								/>
