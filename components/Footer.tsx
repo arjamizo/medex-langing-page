@@ -1,27 +1,43 @@
 import React from "react";
 import styles from "../styles/Footer.module.css";
 import Image from "next/image";
+import { useForm } from "react-hook-form";
 
 export default function Footer() {
+	// icons
 	const iconsArray = [
 		{ path: "/icons/instagram.png", alt: "Instagram" },
 		{ path: "/icons/facebook.png", alt: "Facebook" },
 		{ path: "/icons/twitter.png", alt: "Twitter" },
 	];
-
 	const iconSize = 36; // px
+
+	// search input box
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+	} = useForm();
+	const onSubmit = (data: object) => console.log("footer, searchBox:", data);
 
 	return (
 		<div className={styles.globalFooter}>
 			<div className={styles.searchBoxLeft}>
 				<h2>Medex</h2>
 				<p className={styles.smallText}>What are you looking for?</p>
-				<input
-					type="text"
-					name="search"
-					placeholder="Search.."
-					className={styles.inputSearch}
-				/>
+				<form onSubmit={handleSubmit(onSubmit)}>
+					<input
+						type="text"
+						className={styles.inputSearch}
+						{...register("search")}
+						required
+					/>
+					<input
+						type="submit"
+						value=" "
+						className={styles.inputSubmit}
+					/>
+				</form>
 			</div>
 			<div className={styles.learnInfo}>
 				<h3>Learn</h3>

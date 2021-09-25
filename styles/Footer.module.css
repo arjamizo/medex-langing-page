@@ -55,7 +55,8 @@
 }
 
 .searchBoxLeft {
-	flex-grow: 4;
+	flex-grow: 5;
+	white-space: nowrap;
 }
 
 .learnInfo ul,
@@ -87,32 +88,46 @@
 }
 
 .inputSearch {
-	width: 25rem;
+	width: 20rem;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	font-size: 20px;
-	background-image: url("/icons/search.png");
-	background-color: white;
-	background-position: 97% 50%;
-	background-repeat: no-repeat;
-	background-size: 1.8rem;
-	padding: 1rem 3rem 1rem 1rem;
-	border-radius: 0px 1rem 0px 1rem;
+	padding: 1rem;
+	border-radius: 0px 0rem 0px 1rem;
 	font-family: "Poppins";
-	margin: 0px 2rem 2rem 0px;
+	margin: 0px 0rem 2rem 0px;
+	border-color: white;
 }
+
+.inputSubmit {
+	background-image: url("/icons/search.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border: 1px solid rgb(255, 255, 255);
+	font-size: 20px;
+	padding: 1rem 2rem;
+	border-radius: 0px 1rem 0px 0rem;
+	font-family: "Poppins";
+	margin: 0px 0rem 2rem 0px;
+	background-color: white;
+	border-color: white;
+}
+
+.inputSubmit:hover {
+	background-color: rgb(228, 228, 228);
+	cursor: pointer;
+	outline: none;
+}
+
 @media (max-width: 768px) {
 	/* tablet */
 	.inputSearch {
-		width: 19rem;
+		width: 50vw;
 	}
 }
 
 @media (max-width: 425px) {
 	/* tablet */
-	.inputSearch {
-		width: 75vw;
-	}
 	.globalFooter h2 {
 		font-size: 4rem;
 		padding: 0px;
