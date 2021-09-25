@@ -6,4 +6,141 @@
 		rgb(0, 62, 187) 100%
 	);
 	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1rem 5rem;
+	align-items: flex-start;
+}
+
+.smallText {
+	padding-top: 2rem;
+	margin: 6px 0px;
+	font-size: 20px;
+}
+
+.smallIcons {
+	display: flex;
+	max-width: 14rem;
+	align-content: flex-end;
+}
+
+.oneIcon {
+	flex-grow: 0.5;
+}
+
+.globalFooter h2 {
+	font-size: 5rem;
+	padding: 0px;
+	margin: 0px;
+	font-weight: 700;
+}
+
+.globalFooter h3 {
+	font-size: 2rem;
+	padding: 0px;
+	margin: 0px;
+	font-weight: 600;
+	min-width: 10rem;
+}
+
+.iconsImage:hover {
+	border-radius: 50%;
+	background-color: rgba(0, 0, 2, 0.563);
+	cursor: pointer;
+}
+
+.contactInfo,
+.learnInfo {
+	padding-top: 1.5rem;
+}
+
+.searchBoxLeft {
+	flex-grow: 5;
+	white-space: nowrap;
+}
+
+.learnInfo ul,
+.contactInfo ul {
+	padding: 0px;
+	list-style: none;
+}
+
+.learnInfo {
+	flex-grow: 2;
+}
+
+.contactInfo {
+	flex-grow: 2;
+}
+
+.linksUnderline {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.857);
+	width: fit-content;
+	margin: 1rem 2rem 1.5rem 0px;
+}
+
+.linksUnderline:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.inputSearch {
+	width: 20rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 20px;
+	padding: 1rem;
+	border-radius: 0px 0rem 0px 1rem;
+	font-family: "Poppins";
+	margin: 0px 0rem 2rem 0px;
+	border-color: white;
+}
+
+.inputSubmit {
+	background-image: url("/icons/search.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border: 1px solid rgb(255, 255, 255);
+	font-size: 20px;
+	padding: 1rem 2rem;
+	border-radius: 0px 1rem 0px 0rem;
+	font-family: "Poppins";
+	margin: 0px 0rem 2rem 0px;
+	background-color: white;
+	border-color: white;
+}
+
+.inputSubmit:hover {
+	background-color: rgb(228, 228, 228);
+	cursor: pointer;
+	outline: none;
+}
+
+@media (max-width: 768px) {
+	/* tablet */
+	.inputSearch {
+		width: 50vw;
+	}
+}
+
+@media (max-width: 425px) {
+	/* tablet */
+	.globalFooter h2 {
+		font-size: 4rem;
+		padding: 0px;
+		margin: 0px;
+		font-weight: 700;
+	}
+
+	.smallText {
+		padding-top: 2rem;
+		font-size: 1rem;
+		word-wrap: break-word;
+	}
+	.globalFooter {
+		padding: 1rem 2rem;
+	}
 }
