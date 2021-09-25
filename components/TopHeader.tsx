@@ -9,7 +9,8 @@ export default function TopHeader() {
 			<div className={styles.topRow}>
 				<h1 className={styles.medexLogo}>Medex</h1>
 				<div className={styles.topRightButtons}>
-					<span className={styles.buttonFaq}>
+					<span className={styles.buttonTop}>Współpraca</span>
+					<span className={styles.buttonTop}>
 						<ReactScrollLink
 							activeClass="active"
 							to="faq"
@@ -19,86 +20,36 @@ export default function TopHeader() {
 							FAQ
 						</ReactScrollLink>
 					</span>
-					<span className={styles.buttonPlans}>
-						<ReactScrollLink
-							activeClass="active"
-							to="plans"
-							smooth={true}
-							duration={1000}
-						>
-							Plans
-						</ReactScrollLink>
-					</span>
-					<span className={styles.buttonTryIt}>Try it free</span>
-					<span className={styles.buttonLogIn}>Log in</span>
+					<span className={styles.buttonContact}>Kontakt</span>
+					<span className={styles.buttonTop}>O nas</span>
 				</div>
 			</div>
-			<h2 className={styles.title}>
-				Treatment, when &amp; where You need it
-			</h2>
 			<div className={styles.flexContainer}>
-				<div>
-					<span className={styles.freeMedicalAdvice}>
-						<span className={styles.paddingIcon}>
-							<Image
-								src="/icons/iconFreeMedical.png"
-								alt="Free Medical Advice"
-								width={25}
-								height={25}
-								layout="fixed"
-							/>
-						</span>
-						Free medical advice
-					</span>
-					<span className={styles.licensedProfessionals}>
-						<span className={styles.paddingIcon}>
-							<Image
-								src="/icons/iconLicensedProfessionals.png"
-								alt="Free Medical Advice"
-								width={25}
-								height={25}
-								layout="fixed"
-							/>
-						</span>
-						Licensed professionals
-					</span>
+				<div className={styles.leftSide}>
+					<h2 className={styles.title}>
+						Opieka medyczna bez wychodzenia z domu
+					</h2>
+					<div className={styles.description}>
+						Sprawdż jak możesz zaoszczędzić czas i pieniędzy na
+						leczeniu którego potrzebujesz bez konieczności
+						wychodzenia z domu i ukrytych opłat
+					</div>
+					<div className={styles.getCareButton}>
+						Dowiedz się więcej
+					</div>
 				</div>
-				<div>
-					<span className={styles.personalizedTreatment}>
-						<span className={styles.paddingIcon}>
-							<Image
-								src="/icons/iconPersonalizedTreatment.png"
-								alt="Free Medical Advice"
-								width={25}
-								height={19}
-								layout="fixed"
-							/>
-						</span>
-						Personalized treatment plans
-					</span>
-					<span className={styles.shippingWithin}>
-						<span className={styles.paddingIcon}>
-							<Image
-								src="/icons/iconShippingWithin24.png"
-								alt="Free Medical Advice"
-								width={27}
-								height={25}
-								layout="fixed"
-							/>
-						</span>
-						Shipping within 24 hours
-					</span>
-				</div>
-				<div className={styles.imageLady}>
+				<div className={styles.ladyPicture}>
 					<Image
-						src="/images/ladyMail.png"
-						alt="Free Medical Advice"
-						width={562}
-						height={285}
+						src="/images/ladyDoctor.png"
+						alt="Doctor Lady"
+						layout="fixed"
+						width={463}
+						height={337}
+						objectFit="contain"
+						className={styles.ladyPictureInside}
 					/>
 				</div>
 			</div>
-			<div className={styles.getCareButton}>Get Care</div>
 		</div>
 	);
 }

@@ -31,9 +31,8 @@
 	padding: 0px;
 	margin: 0px;
 	font-size: 40px;
-	font-weight: bold;
 	font-weight: 700;
-	font-size: 3rem;
+	font-size: 45px;
 	line-height: 67.5px;
 	max-width: fit-content;
 	margin: auto;
@@ -42,18 +41,17 @@
 }
 
 .title {
-	padding: 5rem 0px 2rem 0px;
+	padding: 5rem 0px;
 	margin: 0px;
 	font-weight: 100;
 	font-weight: 100;
 	font-size: 40px;
-	line-height: 60px;
+	line-height: 67.5px;
+	font-weight: 600;
 }
 
-.buttonFaq,
-.buttonPlans,
-.buttonLogIn,
-.buttonTryIt {
+.buttonTop,
+.buttonContact {
 	cursor: pointer;
 	font-weight: 400;
 	font-size: 24px;
@@ -64,21 +62,19 @@
 	text-align: center;
 }
 
-.buttonFaq:hover,
-.buttonPlans:hover,
-.buttonLogIn:hover,
-.buttonTryIt:hover {
+.buttonTop:hover {
 	text-decoration: underline;
 }
 
-.buttonTryIt:hover {
+.buttonContact:hover {
 	background-color: rgb(229, 229, 238);
 	color: rgb(0, 58, 146);
 }
 
-.buttonTryIt {
+.buttonContact {
 	border: solid 2px white;
-	padding: 0.5rem 1.6rem;
+	padding: 0.5rem 2.6rem;
+	margin: 0px 1.5rem;
 }
 
 .getCareButton {
@@ -88,12 +84,12 @@
 	background-color: #24b74d;
 	border-radius: 5px;
 	color: white;
-	width: 160px;
+	width: 400px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	margin: 0rem 1rem 2rem 2rem;
+	margin: 0rem 0rem 2rem 0rem;
 }
 
 .getCareButton:hover {
@@ -103,42 +99,38 @@
 }
 
 .flexContainer {
-	color: #d6dcff;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 27px;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	align-items: center;
-}
-
-.freeMedicalAdvice,
-.licensedProfessionals,
-.shippingWithin,
-.personalizedTreatment {
-	display: flex;
-	padding: 20px 0px;
-	white-space: nowrap;
-}
-
-.paddingIcon {
-	padding: 0px 15px;
 	position: relative;
-	align-items: center;
 	display: flex;
-	flex: nowrap;
+	justify-content: space-between;
 }
 
-.imageLady {
-	padding: 0.5rem;
+.description {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	margin: 0px 0px 2rem 0px;
+	color: #d6dcff;
+}
+
+.leftSide {
+	flex-grow: 3;
+	max-width: 34rem;
+}
+.ladyPicture {
+	width: 470px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+.ladyPictureInside {
+	right: 30px;
+	left: 50px;
 }
 
 @media (max-width: 1024px) {
 	/* Laptop */
-	.getCareButton {
-		margin: auto;
-	}
+
 	.globalTopHeader {
 		padding: 1rem 2rem;
 		margin-left: 32px;
@@ -181,19 +173,14 @@
 		line-height: 2.5rem;
 		margin: auto;
 		text-align: center;
+		color: #f5f5f5;
 	}
 
-	.buttonFaq,
-	.buttonPlans,
-	.buttonLogIn,
-	.buttonTryIt {
+	.buttonTop,
+	.buttonContact {
 		font-size: 1.1rem;
 		line-height: 1.4rem;
 		padding: 0.5rem 1rem;
-	}
-	.flexContainer {
-		font-size: 0.8rem;
-		align-items: flex-start;
 	}
 
 	.h1,
@@ -208,10 +195,4 @@
 
 @media (max-width: 425px) {
 	/* Mobile L */
-	.freeMedicalAdvice,
-	.licensedProfessionals,
-	.shippingWithin,
-	.personalizedTreatment {
-		justify-content: center;
-	}
 }
