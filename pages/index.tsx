@@ -1,14 +1,12 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import TopHeader from "./../components/TopHeader";
-import React from "react";
-import styles from "../styles/Home.module.css";
-import HowWeWorkExample from "../components/HowWeWorkExample";
-import Pricing from "../components/Pricing";
-import CustomizedCare from "../components/CustomizedCare";
-import FAQ from "../components/FAQ";
-import Footer from "../components/Footer";
+import Head from 'next/head';
+import React from 'react';
 
+import FAQ from '../components/FAQ';
+import Footer from '../components/Footer';
+import styles from '../styles/Home.module.css';
+import TopHeader from './../components/TopHeader';
+
+import type { NextPage } from "next";
 const Home: NextPage = () => {
 	return (
 		<div className={styles.container}>
@@ -20,9 +18,6 @@ const Home: NextPage = () => {
 
 			<main className={styles.main}>
 				<TopHeader />
-				<HowWeWorkExample />
-				<Pricing />
-				<CustomizedCare />
 				<FAQ />
 				<footer>
 					<Footer />
