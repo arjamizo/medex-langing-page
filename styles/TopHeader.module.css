@@ -152,6 +152,10 @@ div .ladyPicture {
 	}
 }
 
+@media (max-width: 1040px) {
+	/* Center when warp picture*/
+}
+
 @media (max-width: 1024px) {
 	/* Laptop */
 	.globalTopHeader {
