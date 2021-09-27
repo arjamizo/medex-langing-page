@@ -10,6 +10,7 @@ import type { NextPage } from "next";
 import ReachOurPatients from "../components/ReachOurPatients";
 import OurValues from "../components/OurValues";
 import WriteToUs from "../components/WriteToUs";
+import AboutUs from "../components/AboutUs";
 const Home: NextPage = () => {
 	return (
 		<div className={styles.container}>
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
 				<TopHeader />
 				<ReachOurPatients />
 				<OurValues />
+				<AboutUs />
 				<WriteToUs />
 				<FAQ />
 				<footer>
