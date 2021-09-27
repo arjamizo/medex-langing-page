@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/TopHeader.module.css";
 import { Link as ReactScrollLink } from "react-scroll";
-import Image from "next/image";
+import ImageFix from "./elements/ImageFix";
 
 export default function TopHeader() {
 	return (
@@ -38,16 +38,8 @@ export default function TopHeader() {
 						Dowiedz się więcej
 					</div>
 				</div>
-				<div className={styles.ladyPicture}>
-					<Image
-						src="/images/ladyDoctor.png"
-						alt="Doctor Lady"
-						layout="fixed"
-						width={463}
-						height={337}
-						objectFit="contain"
-						className={styles.ladyPictureInside}
-					/>
+				<div className={styles.imagePosition}>
+					<ImageFix />
 				</div>
 			</div>
 		</div>

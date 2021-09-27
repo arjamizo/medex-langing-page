@@ -81,10 +81,10 @@
 	font-size: 24px;
 	font-weight: 400;
 	height: 56px;
+	width: 360px;
 	background-color: #24b74d;
 	border-radius: 5px;
 	color: white;
-	width: 400px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -102,6 +102,7 @@
 	position: relative;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .description {
@@ -113,31 +114,79 @@
 }
 
 .leftSide {
+	position: relative;
 	flex-grow: 3;
 	max-width: 34rem;
-}
-.ladyPicture {
-	width: 470px;
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: right;
 }
 
-.ladyPictureInside {
-	right: 30px;
-	left: 50px;
+.ladyPicture {
+	width: 100%;
+}
+
+.ladyPicture .image {
+	object-fit: contain;
+	width: 100% !important;
+	position: relative !important;
+	height: unset !important;
+}
+
+div .ladyPicture {
+	position: unset !important;
+}
+
+.imagePosition {
+	width: 375px;
+	position: absolute;
+	right: 6rem;
+	bottom: -5rem;
+}
+
+@media (max-width: 1200px) {
+	/* Extra large */
+	.imagePosition {
+		position: static;
+		padding: 1rem;
+	}
+}
+
+@media (max-width: 1040px) {
+	/* Center when warp picture*/
 }
 
 @media (max-width: 1024px) {
 	/* Laptop */
-
 	.globalTopHeader {
 		padding: 1rem 2rem;
 		margin-left: 32px;
 		padding-right: 32px;
+		text-align: center;
 	}
 	.topRow {
 		margin-right: 0px;
+	}
+
+	.ladyPicture {
+		position: static;
+		max-width: 500px;
+		max-height: 500px;
+		width: 0px;
+		left: 0px;
+		bottom: 0px;
+		border: 20px solid black;
+	}
+
+	.flexContainer {
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.getCareButton {
+		width: 300px;
+	}
+	.leftSide {
+		align-items: center;
 	}
 }
 
@@ -149,6 +198,11 @@
 		width: 100%;
 		flex-direction: row;
 		justify-content: center;
+	}
+	.imagePosition {
+		position: static;
+		padding: 1rem;
+		width: 270px;
 	}
 
 	.globalTopHeader {
@@ -167,8 +221,6 @@
 
 	.title {
 		padding: 2rem 1rem;
-		font-weight: 100;
-		font-weight: 100;
 		font-size: 2rem;
 		line-height: 2.5rem;
 		margin: auto;
@@ -190,6 +242,13 @@
 
 	.topRow {
 		margin-right: 0px;
+	}
+
+	.getCareButton {
+		width: 250px;
+	}
+	.description {
+		font-size: 1.2rem;
 	}
 }
 
