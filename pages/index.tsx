@@ -8,6 +8,7 @@ import TopHeader from "./../components/TopHeader";
 
 import type { NextPage } from "next";
 import ReachOurPatients from "../components/ReachOurPatients";
+import OurValues from "../components/OurValues";
 const Home: NextPage = () => {
 	return (
 		<div className={styles.container}>
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
 			<main className={styles.main}>
 				<TopHeader />
 				<ReachOurPatients />
+				<OurValues />
 				<FAQ />
 				<footer>
 					<Footer />
