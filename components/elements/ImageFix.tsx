@@ -2,12 +2,17 @@ import styles from "./ImageFix.module.css";
 import Image from "next/image";
 import React from "react";
 
-export default function ImageFix(props: object) {
+type propsType = {
+	src: string;
+	alt: string;
+};
+
+export default function ImageFix(props: propsType) {
 	return (
 		<div className={styles.imageContainer}>
 			<Image
-				src="/images/ladyDoctor.png"
-				alt=""
+				src={props.src}
+				alt={props.alt}
 				layout="fill"
 				className={styles.image}
 			/>

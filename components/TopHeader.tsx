@@ -39,7 +39,7 @@ export default function TopHeader() {
 					</div>
 				</div>
 				<div className={styles.imagePosition}>
-					<ImageFix />
+					<ImageFix src="/images/ladyDoctor.png" alt="Lady Doctor" />
 				</div>
 			</div>
 		</div>
