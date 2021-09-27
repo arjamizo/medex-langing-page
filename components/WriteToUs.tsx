@@ -11,7 +11,7 @@ export default function WriteToUs() {
 	const onSubmit = (data: object) => console.log("Write to us:", data);
 
 	return (
-		<div className={styles.globalWriteToUs}>
+		<div className={styles.globalWriteToUs} id={"writeToUS"}>
 			<div className={styles.flexContainer}>
 				<div className={styles.leftSide}>
 					<div className={styles.foldMaxWords}>

@@ -3,7 +3,7 @@ import styles from "../styles/AboutUs.module.css";
 
 export default function AboutUs() {
 	return (
-		<div className={styles.globalAboutUs}>
+		<div className={styles.globalAboutUs} id={"aboutUs"}>
 			<h2>O nas</h2>
 			<div className={styles.subTitle}>
 				Medex jest firmą technologiczną, która buduje zaawansowany

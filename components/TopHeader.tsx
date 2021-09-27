@@ -4,6 +4,7 @@ import { Link as ReactScrollLink } from "react-scroll";
 import ImageFix from "./elements/ImageFix";
 
 export default function TopHeader() {
+	const durationScroll = 500;
 	return (
 		<div className={styles.globalTopHeader}>
 			<div className={styles.topRow}>
@@ -15,13 +16,31 @@ export default function TopHeader() {
 							activeClass="active"
 							to="faq"
 							smooth={true}
-							duration={1000}
+							duration={durationScroll}
 						>
 							FAQ
 						</ReactScrollLink>
 					</span>
-					<span className={styles.buttonContact}>Kontakt</span>
-					<span className={styles.buttonTop}>O nas</span>
+					<span className={styles.buttonContact}>
+						<ReactScrollLink
+							activeClass="active"
+							to="writeToUS"
+							smooth={true}
+							duration={durationScroll}
+						>
+							Kontakt
+						</ReactScrollLink>
+					</span>
+					<span className={styles.buttonTop}>
+						<ReactScrollLink
+							activeClass="active"
+							to="aboutUs"
+							smooth={true}
+							duration={durationScroll}
+						>
+							O nas
+						</ReactScrollLink>
+					</span>
 				</div>
 			</div>
 			<div className={styles.flexContainer}>
