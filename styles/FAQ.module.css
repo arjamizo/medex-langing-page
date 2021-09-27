@@ -32,7 +32,7 @@
 	font-weight: 600;
 }
 
-.faqBox h4 {
+.faqBox p {
 	font-weight: 500;
 	color: #646e9f;
 	padding: 0px 0px 1rem 0px;
@@ -64,7 +64,7 @@
 	.faqBox h3 {
 		font-size: 1.2rem;
 	}
-	.faqBox h4 {
+	.faqBox p {
 		font-size: 1rem;
 	}
 }
@@ -76,5 +76,8 @@
 		text-align: center;
 		font-size: 2rem;
 		margin: 1rem;
+	}
+	.globalFaq {
+		padding: 0px 0.5rem;
 	}
 }
