@@ -2,14 +2,9 @@ import styles from "./ImageFix.module.css";
 import Image from "next/image";
 import React from "react";
 
-type ImageFix = {
-	width: object;
-	maxWidth: string;
-};
-
-export default function ImageFix(props: ImageFix) {
+export default function ImageFix(props: object) {
 	return (
-		<div className={styles.imageContainer} style={props.width}>
+		<div className={styles.imageContainer}>
 			<Image
 				src="/images/ladyDoctor.png"
 				alt=""
