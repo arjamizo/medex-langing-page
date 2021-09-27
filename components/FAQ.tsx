@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/FAQ.module.css";
-import FaqOneElement from "./elements/FAQoneElement";
+import FaqOneElement from "./elements/FaqOneElements";
 
 export default function FAQ() {
 	const questions = [
