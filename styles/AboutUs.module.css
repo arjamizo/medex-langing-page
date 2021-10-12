@@ -21,10 +21,10 @@
 @media (max-width: 768px) {
 	/* tablet */
 	.globalAboutUs {
-		padding: 0px;
+		padding: 0;
 	}
 
 	.subTitle {
-		padding: 0px 0px 2rem 0px;
+		padding: 0 0 2rem 0;
 	}
 }

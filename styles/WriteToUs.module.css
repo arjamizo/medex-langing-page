@@ -7,14 +7,14 @@
 		rgb(0, 62, 187) 100%
 	);
 	color: white;
-	border-radius: 3rem 0px 0px 0px;
+	border-radius: 3rem 0 0 0;
 	padding: 4rem 4rem 3.5rem 4rem;
 }
 
 .globalWriteToUs h2 {
 	font-size: 48px;
 	font-weight: 700;
-	margin: 0px;
+	margin: 0;
 }
 
 .subTitle {
@@ -40,24 +40,22 @@
 
 .rightSide {
 	width: 50%;
-	padding: 0rem 3rem;
+	padding: 0 3rem;
 }
 
 .inputBox {
 	width: 100%;
-	border: 1px solid #ccc;
-	border-radius: 4px;
+	border: 3px solid #ccc;
 	font-size: 20px;
 	padding: 1rem;
 	border-radius: 0.5rem;
 	font-family: "Poppins";
-	margin: 0px 0rem 1rem 0px;
+	margin: 0 0 1rem 0;
 	border-color: rgba(148, 148, 148, 0.563);
-	border-width: 3px;
 }
 
 .textAboveInput {
-	margin: 0px 0px 6px 1rem;
+	margin: 0 0 6px 1rem;
 	font-weight: 300;
 	font-size: 14px;
 }
@@ -75,7 +73,7 @@
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	margin: 2rem 0rem 0rem 0rem;
+	margin: 2rem 0 0 0;
 }
 
 .inputSubmit:hover {
@@ -99,13 +97,13 @@
 
 	.rightSide {
 		width: 100%;
-		padding: 0rem 1rem;
+		padding: 0 1rem;
 	}
 	.inputBox {
 		width: 100%;
 	}
 	.positionSubmit {
-		margin: 0px auto;
+		margin: 0 auto;
 		display: table;
 	}
 	.globalWriteToUs {

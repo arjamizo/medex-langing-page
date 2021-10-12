@@ -1,5 +1,5 @@
 .globalTopHeader {
-	padding: 2rem 0px 1rem 6rem;
+	padding: 2rem 0 1rem 6rem;
 	margin-left: 20px;
 	background: linear-gradient(
 		90deg,
@@ -8,7 +8,7 @@
 		rgb(1, 47, 139) 100%
 	);
 	color: white;
-	border-radius: 0px 0px 0px 70px;
+	border-radius: 0 0 0 70px;
 }
 
 .topRow {
@@ -28,12 +28,10 @@
 
 .h1,
 .medexLogo {
-	padding: 0px;
-	margin: 0px;
-	font-size: 40px;
+	padding: 0;
 	font-weight: 700;
 	font-size: 45px;
-	line-height: 67.5px;
+	line-height: 68px;
 	max-width: fit-content;
 	margin: auto;
 	cursor: pointer;
@@ -41,12 +39,10 @@
 }
 
 .title {
-	padding: 5rem 0px;
-	margin: 0px;
-	font-weight: 100;
-	font-weight: 100;
+	padding: 5rem 0;
+	margin: 0;
 	font-size: 40px;
-	line-height: 67.5px;
+	line-height: 68px;
 	font-weight: 600;
 }
 
@@ -74,7 +70,7 @@
 .buttonContact {
 	border: solid 2px white;
 	padding: 0.5rem 2.6rem;
-	margin: 0px 1.5rem;
+	margin: 0 1.5rem;
 }
 
 .getCareButton {
@@ -89,7 +85,7 @@
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	margin: 0rem 0rem 2rem 0rem;
+	margin: 0 0 2rem 0;
 }
 
 .getCareButton:hover {
@@ -109,7 +105,7 @@
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 30px;
-	margin: 0px 0px 2rem 0px;
+	margin: 0 0 2rem 0;
 	color: #d6dcff;
 }
 
@@ -119,7 +115,6 @@
 	max-width: 34rem;
 	display: flex;
 	flex-direction: column;
-	align-items: right;
 }
 
 .ladyPicture {
@@ -159,22 +154,21 @@ div .ladyPicture {
 @media (max-width: 1024px) {
 	/* Laptop */
 	.globalTopHeader {
-		padding: 1rem 2rem;
+		padding: 1rem 32px 1rem 2rem;
 		margin-left: 32px;
-		padding-right: 32px;
 		text-align: center;
 	}
 	.topRow {
-		margin-right: 0px;
+		margin-right: 0;
 	}
 
 	.ladyPicture {
 		position: static;
 		max-width: 500px;
 		max-height: 500px;
-		width: 0px;
-		left: 0px;
-		bottom: 0px;
+		width: 0;
+		left: 0;
+		bottom: 0;
 		border: 20px solid black;
 	}
 
@@ -193,7 +187,7 @@ div .ladyPicture {
 @media (max-width: 768px) {
 	/* Tablet */
 	.topRightButtons {
-		padding: 1rem 0px 0px 0px;
+		padding: 1rem 0 0 0;
 		flex-wrap: wrap;
 		width: 100%;
 		flex-direction: row;
@@ -206,9 +200,8 @@ div .ladyPicture {
 	}
 
 	.globalTopHeader {
-		padding: 1rem 1rem;
+		padding: 1rem 32px 1rem 1rem;
 		margin-left: 16px;
-		padding-right: 32px;
 		background: linear-gradient(
 			90deg,
 			rgb(37, 109, 253) 0%,
@@ -216,7 +209,7 @@ div .ladyPicture {
 			rgb(1, 47, 139) 100%
 		);
 		color: white;
-		border-radius: 0px 0px 0px 70px;
+		border-radius: 0 0 0 70px;
 	}
 
 	.title {
@@ -241,7 +234,7 @@ div .ladyPicture {
 	}
 
 	.topRow {
-		margin-right: 0px;
+		margin-right: 0;
 	}
 
 	.getCareButton {
@@ -250,8 +243,4 @@ div .ladyPicture {
 	.description {
 		font-size: 1.2rem;
 	}
-}
-
-@media (max-width: 425px) {
-	/* Mobile L */
 }
