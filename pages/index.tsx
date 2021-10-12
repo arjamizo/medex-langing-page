@@ -11,19 +11,22 @@ import ReachOurPatients from "../components/ReachOurPatients";
 import OurValues from "../components/OurValues";
 import WriteToUs from "../components/WriteToUs";
 import AboutUs from "../components/AboutUs";
+import WhatWeCouldDo from "../components/WhatWeCouldDo";
 const Home: NextPage = () => {
 	return (
 		<div className={styles.container}>
 			<Head>
 				<title>Medex</title>
 				<meta name="Medex" content="Health care app" />
-				<link rel="icon" href="/favicon.ico" />
+				{/*TODO: find icon*/}
+				<link rel="icon" href="#" />
 			</Head>
 
 			<main className={styles.main}>
 				<TopHeader />
 				<ReachOurPatients />
 				<OurValues />
+				<WhatWeCouldDo />
 				<AboutUs />
 				<WriteToUs />
 				<FAQ />

@@ -1,15 +1,13 @@
 .globalOurValues {
 	padding: 40px;
-	border: 1px solid green;
-	font-family: "Poppins";
 }
 
 .globalOurValues h2 {
 	font-size: 48px;
 	text-align: center;
 	color: #2f3c7e;
-	padding: 0px;
-	margin: 0px 0px 1rem 0px;
+	padding: 0;
+	margin: 0 0 1rem 0;
 }
 
 .subTitle {
@@ -17,7 +15,7 @@
 	line-height: 30px;
 	text-align: center;
 	color: #2f3c7e;
-	margin: 0px 0px 4rem 0px;
+	margin: 0 0 4rem 0;
 }
 
 .box {
@@ -45,19 +43,19 @@
 /* TODO: remove duplicates */
 .borderTopRight {
 	background-color: #0e54da;
-	border-radius: 0px 4rem 0px 0px;
+	border-radius: 0 4rem 0 0;
 	height: 160px;
 }
 
 .borderBottomLeft {
 	background-color: #0e54da;
-	border-radius: 0px 0px 0px 4rem;
+	border-radius: 0 0 0 4rem;
 	height: 160px;
 }
 
 .borderTopLeft {
 	background-color: #0e54da;
-	border-radius: 4rem 0px 0px 0px;
+	border-radius: 4rem 0 0 0;
 	height: 160px;
 }
 
@@ -76,7 +74,7 @@
 }
 
 .borderRadiusTopRight {
-	border-radius: 0px 0px 2rem 0px;
+	border-radius: 0 0 2rem 0;
 }
 
 @media (max-width: 768px) {
@@ -87,10 +85,10 @@
 
 	.flexContainer {
 		gap: 1rem;
-		margin: 0rem;
+		margin: 0;
 	}
 
 	.subTitle {
-		margin: 0px 0px 2rem 0px;
+		margin: 0 0 2rem 0;
 	}
 }
