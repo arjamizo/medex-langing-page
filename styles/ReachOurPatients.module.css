@@ -11,9 +11,34 @@
 	font-weight: 600;
 }
 
+.circle {
+	background: linear-gradient(
+			90deg,
+			rgb(37, 109, 253) 0%,
+			rgba(12, 85, 189, 1) 35%,
+			rgb(1, 47, 139) 100%
+	);
+	border-radius: 100%;
+	width: 70vw;
+	height: 70vw;
+	margin: auto;
+	position: relative;
+	text-align: center
+}
+
+.centerWhiteText {
+	display: inline-block;
+	top: 50%;
+	left: 50%;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 37.5px;
+	text-align: center;
+	color: white;
+}
+
 @media (max-width: 1024px) {
 	/* Laptop */
-
 	.globalReachOurPatients {
 		padding: 1rem 2rem;
 	}
