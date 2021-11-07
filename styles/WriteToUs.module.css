@@ -1,0 +1,118 @@
+.globalWriteToUs {
+	margin: 2rem;
+	background: linear-gradient(
+		90deg,
+		rgb(37, 109, 253) 0%,
+		rgba(12, 85, 189, 1) 35%,
+		rgb(0, 62, 187) 100%
+	);
+	color: white;
+	border-radius: 3rem 0 0 0;
+	padding: 4rem 4rem 3.5rem 4rem;
+}
+
+.globalWriteToUs h2 {
+	font-size: 48px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.subTitle {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	margin-top: 1rem;
+	color: rgba(255, 255, 255, 0.796);
+}
+
+.flexContainer {
+	display: flex;
+}
+
+.leftSide {
+	width: 50%;
+	padding: 1rem;
+}
+
+.foldMaxWords {
+	max-width: 400px;
+}
+
+.rightSide {
+	width: 50%;
+	padding: 0 3rem;
+}
+
+.inputBox {
+	width: 100%;
+	border: 3px solid #ccc;
+	font-size: 20px;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	font-family: "Poppins";
+	margin: 0 0 1rem 0;
+	border-color: rgba(148, 148, 148, 0.563);
+}
+
+.textAboveInput {
+	margin: 0 0 6px 1rem;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.inputSubmit {
+	all: unset;
+	font-size: 24px;
+	font-weight: 400;
+	height: 56px;
+	width: 12rem;
+	background-color: #24b74d;
+	border-radius: 5px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	margin: 2rem 0 0 0;
+}
+
+.inputSubmit:hover {
+	background-color: #01b929b7;
+	color: rgb(255, 255, 255);
+	text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+	/* Laptop */
+	.flexContainer {
+		display: block;
+	}
+	.leftSide {
+		width: 100%;
+		text-align: center;
+	}
+	.foldMaxWords {
+		max-width: 100%;
+	}
+
+	.rightSide {
+		width: 100%;
+		padding: 0 1rem;
+	}
+	.inputBox {
+		width: 100%;
+	}
+	.positionSubmit {
+		margin: 0 auto;
+		display: table;
+	}
+	.globalWriteToUs {
+		padding: 2rem 1rem;
+	}
+	.inputBox {
+		font-size: 0.8rem;
+	}
+	.globalWriteToUs {
+		margin: 1rem;
+	}
+}

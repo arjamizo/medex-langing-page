@@ -1,0 +1,79 @@
+.globalOurValues {
+	padding: 40px;
+}
+
+.globalOurValues h2 {
+	font-size: 48px;
+	text-align: center;
+	color: #2f3c7e;
+	padding: 0;
+	margin: 0 0 1rem 0;
+}
+
+.subTitle {
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #2f3c7e;
+	margin: 0 0 4rem 0;
+}
+
+.box {
+	width: 300px;
+	height: 470px;
+	border: 4px solid rgba(128, 128, 128, 0.042);
+	border-radius: 5px;
+}
+
+.flexContainer {
+	display: flex;
+	justify-content: space-around;
+	gap: 2rem;
+	margin: 1rem;
+	flex-wrap: wrap;
+}
+
+.top {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+/* TODO: remove duplicates */
+.borderTopRight {
+	background-color: #0e54da;
+	border-radius: 0 4rem 0 0;
+	height: 160px;
+}
+
+.borderBottomLeft {
+	background-color: #0e54da;
+	border-radius: 0 0 0 4rem;
+	height: 160px;
+}
+
+.borderTopLeft {
+	background-color: #0e54da;
+	border-radius: 4rem 0 0 0;
+	height: 160px;
+}
+
+.bottom {
+	margin-top: 0.5rem;
+	font-weight: 400;
+	line-height: 27px;
+	font-size: 18px;
+	color: #2f3c7e;
+	padding: 1rem;
+}
+
+.iconSize {
+	width: 50%;
+	margin: auto;
+}
+
+.borderRadiusTopRight {
+	border-radius: 0 0 2rem 0;
+}
+

@@ -1,5 +1,5 @@
 .globalTopHeader {
-	padding: 2rem 0px 1rem 6rem;
+	padding: 2rem 0 1rem 6rem;
 	margin-left: 20px;
 	background: linear-gradient(
 		90deg,
@@ -8,7 +8,7 @@
 		rgb(1, 47, 139) 100%
 	);
 	color: white;
-	border-radius: 0px 0px 0px 70px;
+	border-radius: 0 0 0 70px;
 }
 
 .topRow {
@@ -28,13 +28,10 @@
 
 .h1,
 .medexLogo {
-	padding: 0px;
-	margin: 0px;
-	font-size: 40px;
-	font-weight: bold;
+	padding: 0;
 	font-weight: 700;
-	font-size: 3rem;
-	line-height: 67.5px;
+	font-size: 45px;
+	line-height: 68px;
 	max-width: fit-content;
 	margin: auto;
 	cursor: pointer;
@@ -42,18 +39,15 @@
 }
 
 .title {
-	padding: 5rem 0px 2rem 0px;
-	margin: 0px;
-	font-weight: 100;
-	font-weight: 100;
+	padding: 5rem 0;
+	margin: 0;
 	font-size: 40px;
-	line-height: 60px;
+	line-height: 68px;
+	font-weight: 600;
 }
 
-.buttonFaq,
-.buttonPlans,
-.buttonLogIn,
-.buttonTryIt {
+.buttonTop,
+.buttonContact {
 	cursor: pointer;
 	font-weight: 400;
 	font-size: 24px;
@@ -64,36 +58,34 @@
 	text-align: center;
 }
 
-.buttonFaq:hover,
-.buttonPlans:hover,
-.buttonLogIn:hover,
-.buttonTryIt:hover {
+.buttonTop:hover {
 	text-decoration: underline;
 }
 
-.buttonTryIt:hover {
+.buttonContact:hover {
 	background-color: rgb(229, 229, 238);
 	color: rgb(0, 58, 146);
 }
 
-.buttonTryIt {
+.buttonContact {
 	border: solid 2px white;
-	padding: 0.5rem 1.6rem;
+	padding: 0.5rem 2.6rem;
+	margin: 0 1.5rem;
 }
 
 .getCareButton {
 	font-size: 24px;
 	font-weight: 400;
 	height: 56px;
+	width: 360px;
 	background-color: #24b74d;
 	border-radius: 5px;
 	color: white;
-	width: 160px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	margin: 0rem 1rem 2rem 2rem;
+	margin: 0 0 2rem 0;
 }
 
 .getCareButton:hover {
@@ -103,66 +95,113 @@
 }
 
 .flexContainer {
-	color: #d6dcff;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 27px;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	align-items: center;
-}
-
-.freeMedicalAdvice,
-.licensedProfessionals,
-.shippingWithin,
-.personalizedTreatment {
-	display: flex;
-	padding: 20px 0px;
-	white-space: nowrap;
-}
-
-.paddingIcon {
-	padding: 0px 15px;
 	position: relative;
-	align-items: center;
 	display: flex;
-	flex: nowrap;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-.imageLady {
-	padding: 0.5rem;
+.description {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	margin: 0 0 2rem 0;
+	color: #d6dcff;
+}
+
+.leftSide {
+	position: relative;
+	flex-grow: 3;
+	max-width: 34rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.ladyPicture {
+	width: 100%;
+}
+
+.ladyPicture .image {
+	object-fit: contain;
+	width: 100% !important;
+	position: relative !important;
+	height: unset !important;
+}
+
+div .ladyPicture {
+	position: unset !important;
+}
+
+.imagePosition {
+	width: 375px;
+	position: absolute;
+	right: 6rem;
+	bottom: -5rem;
+}
+
+@media (max-width: 1200px) {
+	/* Extra large */
+	.imagePosition {
+		position: static;
+		padding: 1rem;
+	}
+}
+
+@media (max-width: 1040px) {
+	/* Center when warp picture*/
 }
 
 @media (max-width: 1024px) {
 	/* Laptop */
-	.getCareButton {
-		margin: auto;
-	}
 	.globalTopHeader {
-		padding: 1rem 2rem;
+		padding: 1rem 32px 1rem 2rem;
 		margin-left: 32px;
-		padding-right: 32px;
+		text-align: center;
 	}
 	.topRow {
-		margin-right: 0px;
+		margin-right: 0;
+	}
+
+	.ladyPicture {
+		position: static;
+		max-width: 500px;
+		max-height: 500px;
+		width: 0;
+		left: 0;
+		bottom: 0;
+		border: 20px solid black;
+	}
+
+	.flexContainer {
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.getCareButton {
+		width: 300px;
+	}
+	.leftSide {
+		align-items: center;
 	}
 }
 
 @media (max-width: 768px) {
 	/* Tablet */
 	.topRightButtons {
-		padding: 1rem 0px 0px 0px;
+		padding: 1rem 0 0 0;
 		flex-wrap: wrap;
 		width: 100%;
 		flex-direction: row;
 		justify-content: center;
 	}
+	.imagePosition {
+		position: static;
+		padding: 1rem;
+		width: 270px;
+	}
 
 	.globalTopHeader {
-		padding: 1rem 1rem;
+		padding: 1rem 32px 1rem 1rem;
 		margin-left: 16px;
-		padding-right: 32px;
 		background: linear-gradient(
 			90deg,
 			rgb(37, 109, 253) 0%,
@@ -170,30 +209,23 @@
 			rgb(1, 47, 139) 100%
 		);
 		color: white;
-		border-radius: 0px 0px 0px 70px;
+		border-radius: 0 0 0 70px;
 	}
 
 	.title {
 		padding: 2rem 1rem;
-		font-weight: 100;
-		font-weight: 100;
 		font-size: 2rem;
 		line-height: 2.5rem;
 		margin: auto;
 		text-align: center;
+		color: #f5f5f5;
 	}
 
-	.buttonFaq,
-	.buttonPlans,
-	.buttonLogIn,
-	.buttonTryIt {
+	.buttonTop,
+	.buttonContact {
 		font-size: 1.1rem;
 		line-height: 1.4rem;
 		padding: 0.5rem 1rem;
-	}
-	.flexContainer {
-		font-size: 0.8rem;
-		align-items: flex-start;
 	}
 
 	.h1,
@@ -202,16 +234,13 @@
 	}
 
 	.topRow {
-		margin-right: 0px;
+		margin-right: 0;
 	}
-}
 
-@media (max-width: 425px) {
-	/* Mobile L */
-	.freeMedicalAdvice,
-	.licensedProfessionals,
-	.shippingWithin,
-	.personalizedTreatment {
-		justify-content: center;
+	.getCareButton {
+		width: 250px;
+	}
+	.description {
+		font-size: 1.2rem;
 	}
 }

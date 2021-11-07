@@ -1,0 +1,30 @@
+.globalAboutUs {
+	padding: 3rem;
+	text-align: center;
+	color: #2f3c7e;
+}
+
+.globalAboutUs h2 {
+	font-size: 48px;
+	margin: 1rem;
+}
+
+.subTitle {
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+	padding: 1rem;
+	max-width: 80%;
+	margin: auto;
+}
+
+@media (max-width: 768px) {
+	/* tablet */
+	.globalAboutUs {
+		padding: 0;
+	}
+
+	.subTitle {
+		padding: 0 0 2rem 0;
+	}
+}
