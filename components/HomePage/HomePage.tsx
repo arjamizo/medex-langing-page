@@ -2,7 +2,7 @@ import React from "react";
 import type {NextPage} from "next";
 import TopHeader from "./TopHeader";
 import ReachOurPatients from "./ReachOurPatients/ReachOurPatients";
-import OurValues from "./OurValues";
+import {OurValues} from "./OurValues";
 import WhatWeCouldDo from "./WhatWeCouldDo";
 import AboutUs from "./AboutUs";
 import WriteToUs from "./WriteToUs";

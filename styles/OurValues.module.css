@@ -77,18 +77,3 @@
 	border-radius: 0 0 2rem 0;
 }
 
-@media (max-width: 768px) {
-	/* Tablet */
-	.globalOurValues {
-		padding: 1rem;
-	}
-
-	.flexContainer {
-		gap: 1rem;
-		margin: 0;
-	}
-
-	.subTitle {
-		margin: 0 0 2rem 0;
-	}
-}
