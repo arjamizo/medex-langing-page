@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "../styles/TopHeader.module.css";
+import styles from "../../styles/TopHeader.module.css";
 import {Link as ReactScrollLink} from "react-scroll";
-import ImageFix from "./elements/ImageFix";
+import ImageFix from "../ImageFix/ImageFix";
 
 export default function TopHeader() {
   const durationScroll = 500;

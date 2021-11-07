@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../styles/OurValues.module.css";
-import ImageFix from "./elements/ImageFix";
+import styles from "../../styles/OurValues.module.css";
+import ImageFix from "../ImageFix/ImageFix";
 
 export default function OurValues() {
   return (

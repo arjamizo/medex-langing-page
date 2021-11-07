@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../../styles/FAQ.module.css";
+import styles from "../../../styles/FAQ.module.css";
 
 type faqProps = {
 	title: string;
@@ -24,9 +24,10 @@ export default function FaqOneElement(props: faqProps) {
 			</div>
 		);
 	}
+
 	return (
 		<div className={styles.faqBox}>
-			<CloseIcon />
+			<CloseIcon/>
 			<h3>{props.title}</h3>
 			<p>{props.description}</p>
 		</div>

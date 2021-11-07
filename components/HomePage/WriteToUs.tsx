@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/WriteToUs.module.css";
+import styles from "../../styles/WriteToUs.module.css";
 import {useForm} from "react-hook-form";
 
 export default function WriteToUs() {

@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../styles/WhatWeCouldDo.module.css";
-import ImageFix from "./elements/ImageFix";
+import styles from "../../styles/WhatWeCouldDo.module.css";
+import ImageFix from "../ImageFix/ImageFix";
 
 export default function WhatWeCouldDo() {
   return (
@@ -10,7 +10,7 @@ export default function WhatWeCouldDo() {
           <h3>Odkryj co Medex może zrobić dla Twojej firmy.</h3>
           <div className={styles.buttonGreen}>Zaczynajmy</div>
         </div>
-        <div className={styles.backgroundSquareAbsolute} />
+        <div className={styles.backgroundSquareAbsolute}/>
         <div className={styles.backgroundSquareRelative}>
           <div className={styles.flex}>
             {/* TODO: this should be map */}

@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "../styles/FAQ.module.css";
-import FaqOneElement from "./elements/FaqOneElements";
+import styles from "../../../styles/FAQ.module.css";
+import FaqOneElement from "./FaqOneElements";
 
-export default function FAQ() {
+export default function FaqSection() {
   const questions = [
     {
       title: "Ile czasu zajmuje odpowiedź od lekarza?",
